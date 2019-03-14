@@ -1,0 +1,160 @@
+{
+  "id": "a70acb87-f838-429b-bcb2-cfbf56f9b70e",
+  "version": "2.0",
+  "name": "Spring Test",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "37e144f3-5090-4475-bb24-362e42ff6a93",
+    "name": "Untitled",
+    "commands": [{
+      "id": "4f806cbd-eb0e-4d9c-bbec-23d9c868f57e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5426eef6-d7fb-4956-bcac-52b7089accb4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1152",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3c75ef7-2388-46b3-86e7-cb8a80bb7cae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand > span",
+      "targets": [
+        ["css=.navbar-brand > span", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edc8d526-0573-493a-b24c-1d93c14e6fe6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Owners')]", "xpath:link"],
+        ["xpath=//div[@id='main-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3e50aac-c210-4a6c-8c4b-c465f1357c54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-menu > li:nth-child(1) > a",
+      "targets": [
+        ["css=.dropdown-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='main-navbar']/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/owners')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d7e552e-dbd0-46c9-8053-73e9fae307f1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Eduardo Rodriquez",
+      "targets": [
+        ["linkText=Eduardo Rodriquez", "linkText"],
+        ["css=.ng-scope:nth-child(3) > td:nth-child(1) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'Eduardo Rodriquez')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#!/owners/details/3')]", "xpath:href"],
+        ["xpath=//tr[3]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Eduardo Rodriquez')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36ca0bbc-2d0e-4208-9484-a6ba9e83b7b4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Eduardo Rodriquez",
+      "targets": [
+        ["linkText=Eduardo Rodriquez", "linkText"],
+        ["css=.ng-scope:nth-child(3) > td:nth-child(1) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'Eduardo Rodriquez')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#!/owners/details/3')]", "xpath:href"],
+        ["xpath=//tr[3]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Eduardo Rodriquez')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a0aed76-3fa7-4c2f-b8a3-e09eb59b56f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) span:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(3) span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main-navbar']/ul/li[3]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1047e26-c1aa-49e6-bdc0-b06fcf12b1e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Owners')]", "xpath:link"],
+        ["xpath=//div[@id='main-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2530fffe-5fdb-4812-8871-4b3feeee2161",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.dropdown-menu > li:nth-child(1) > a",
+      "targets": [
+        ["css=.dropdown-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='main-navbar']/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/owners')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f93ceca-a535-4ba8-947b-36623b67aa0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-menu > li:nth-child(1) > a",
+      "targets": [
+        ["css=.dropdown-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='main-navbar']/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#!/owners')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abd1c6aa-fc54-449d-acec-685d83614aa5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=David Schroeder",
+      "targets": [
+        ["linkText=David Schroeder", "linkText"],
+        ["css=.ng-scope:nth-child(9) > td:nth-child(1) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'David Schroeder')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#!/owners/details/9')]", "xpath:href"],
+        ["xpath=//tr[9]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'David Schroeder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "96b7a838-f7d2-421b-95f1-98e5d33dbf6e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["37e144f3-5090-4475-bb24-362e42ff6a93"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

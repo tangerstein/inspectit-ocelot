@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<business-context xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" revision="1" schemaVersion="9" xsi:noNamespaceSchemaLocation="schema/ciSchema.xsd">
+    <applications/>
+</business-context>

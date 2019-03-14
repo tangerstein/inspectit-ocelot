@@ -19,7 +19,7 @@ services:
     mem_limit: 512M
     entrypoint: ["sh", "-c","
       java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.security.egd=file:/dev/./urandom
-      -javaagent:/agent/inspectit-oce-agent.jar
+      -javaagent:/agent/inspectit-agent.jar
       -jar /app.jar"]
     volumes:
       - ./agentconfig/config-server:/agentconfig
@@ -42,7 +42,7 @@ services:
     entrypoint: ["sh", "-c","
       ./dockerize -wait=tcp://config-server:8888 -timeout=120s -- &&
       java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.security.egd=file:/dev/./urandom
-      -javaagent:/agent/inspectit-oce-agent.jar
+      -javaagent:/agent/inspectit-agent.jar
       -jar /app.jar"]
     volumes:
       - ./agentconfig/discovery-server:/agentconfig
@@ -66,7 +66,7 @@ services:
     entrypoint: ["sh", "-c","
       ./dockerize -wait=tcp://discovery-server:8761 -timeout=120s -- &&
       java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.security.egd=file:/dev/./urandom
-      -javaagent:/agent/inspectit-oce-agent.jar
+      -javaagent:/agent/inspectit-agent.jar
       -jar /app.jar"]
     volumes:
       - ./agentconfig/customers-service:/agentconfig
@@ -90,7 +90,7 @@ services:
     entrypoint: ["sh", "-c","
       ./dockerize -wait=tcp://discovery-server:8761 -timeout=120s -- &&
       java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.security.egd=file:/dev/./urandom
-      -javaagent:/agent/inspectit-oce-agent.jar
+      -javaagent:/agent/inspectit-agent.jar
       -jar /app.jar"]
     volumes:
       - ./agentconfig/visits-service:/agentconfig
@@ -114,7 +114,7 @@ services:
     entrypoint: ["sh", "-c","
       ./dockerize -wait=tcp://discovery-server:8761 -timeout=120s -- &&
       java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.security.egd=file:/dev/./urandom
-      -javaagent:/agent/inspectit-oce-agent.jar
+      -javaagent:/agent/inspectit-agent.jar
       -jar /app.jar"]
     volumes:
       - ./agentconfig/vets-service:/agentconfig
@@ -138,7 +138,7 @@ services:
     entrypoint: ["sh", "-c","
       ./dockerize -wait=tcp://discovery-server:8761 -timeout=120s -- &&
       java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.security.egd=file:/dev/./urandom
-      -javaagent:/agent/inspectit-oce-agent.jar
+      -javaagent:/agent/inspectit-agent.jar
       -jar /app.jar"]
     volumes:
       - ./agentconfig/api-gateway:/agentconfig
