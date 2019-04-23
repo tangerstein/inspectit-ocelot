@@ -159,6 +159,7 @@ services:
       - ./grafana/provisioning/eum:/usr/share/grafana/custom/
     ports:
       - 3000:3000
+    entrypoint: ["sh", "-c","grafana-cli plugins install grafana-worldmap-panel && /run.sh"]
 
   firefox:
     image: selenium/node-firefox:3.141.59-krypton
@@ -192,4 +193,10 @@ services:
       - TARGET_PORT=8080
       - TARGET_URL=http://api-gateway:8080/
       - SELENIUM_HUB_HOST=selenium-hub
-  
+  data-generator:
+    image: java:8-alpine
+    volumes: 
+      - './generator/:/generator/'
+    working_dir: /generator  
+    entrypoint: ["sh", "-c","
+       java -jar time-series-data-generator-1.0-SNAPSHOT.jar"]
