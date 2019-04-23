@@ -159,19 +159,10 @@ services:
       - ./grafana/provisioning/eum:/usr/share/grafana/custom/
     ports:
       - 3000:3000
-    entrypoint: ["sh", "-c","grafana-cli plugins install grafana-worldmap-panel && /run.sh"]
+    entrypoint: ["sh", "-c","grafana-cli plugins install grafana-worldmap-panel && grafana-cli plugins install grafana-piechart-panel && /run.sh"]
 
   firefox:
     image: selenium/node-firefox:3.141.59-krypton
-    volumes:
-      - /dev/shm:/dev/shm
-    depends_on:
-      - selenium-hub
-    environment:
-      HUB_HOST: selenium-hub
-
-  chrome:
-    image: selenium/node-chrome:3.141.59-krypton
     volumes:
       - /dev/shm:/dev/shm
     depends_on:
