@@ -16,7 +16,7 @@ ss
 2. Group: ch.qos.logback  Name: logback-core  Version: 1.2.3
 
 Manifest Project URL: http://www.qos.ch
-
+sdf
 Manifest license URL: http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 
 POM License: Eclipse Public License - v 1.0 - http://www.eclipse.org/legal/epl-v10.html
