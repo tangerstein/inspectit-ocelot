@@ -28,7 +28,7 @@ POM License: GNU Lesser General Public License - http://www.gnu.org/licenses/old
 3. Group: com.fasterxml  Name: classmate  Version: 1.3.4
 
 Project URL: http://github.com/FasterXML/java-classmate
-
+sdf
 Manifest license URL: http://www.apache.org/licenses/LICENSE-2.0.txt
 
 POM License: The Apache Software License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0.txt
