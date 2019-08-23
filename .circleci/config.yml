@@ -41,7 +41,7 @@ jobs:
       - run:
           name: Commit Message Validation
           command: |
-            message=$(git log --format=%B -n 1 $CIRCLE_SHA1);  if  [[  ( ! $message =~ .*#[0-9].*) || ( $message =~ Closes[[:space:]]#[0-9]*[[:space:]]-[[:space:]].* ) ]]; then echo "commit ok"; exit 0; else echo "commit is shit"; exit 1; fi
+            message=$(git --git-dir=~/inspectit/repo/.git --work-tree=~/inspectit/repo --format=%B -n 1 $CIRCLE_SHA1);  if  [[  ( ! $message =~ .*#[0-9].*) || ( $message =~ Closes[[:space:]]#[0-9]*[[:space:]]-[[:space:]].* ) ]]; then echo "commit ok"; exit 0; else echo "commit is shit"; exit 1; fi
       - persist_to_workspace:
           root: ~/inspectit
           paths:
